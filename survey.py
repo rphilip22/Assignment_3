@@ -7,7 +7,8 @@ for preference in preferences:
         counts[preference] = 1
 
 total = len(preferences)
-percentage = (counts[preference] / total) * 100
 print("Total preferences:", total)
 print("Preference counts:", counts)
-print("Preference percentages:", percentage)
+for item in counts:
+    percentage = (counts[item] / total) * 100
+    print(f"{item}: {percentage:.0f}%")
