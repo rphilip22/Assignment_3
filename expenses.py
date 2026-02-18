@@ -5,6 +5,7 @@ expenses = {
     "Supplies": []
 }
 
+# Collect expenses from the user
 for category in expenses:
     while True:
         amount = float(input(f"Enter the amount for {category} (enter '0' to finish): "))
@@ -13,6 +14,7 @@ for category in expenses:
         expenses[category].append(amount)
         total += amount
 
+# Generate the expense summary report
 print("\nExpense Summary Report:")
 for category in expenses:
         print(f"Current total for {category}: ${sum(expenses[category]):.2f}")
