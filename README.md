@@ -16,13 +16,15 @@ The program repeatedly asks the user for item prices. If the user enters 0, the 
 
 ### Sample Run
 Input:
+
 Enter item price (0 to finish): 10  
 Enter item price (0 to finish): 20  
 Enter item price (0 to finish): 0  
 
 Output:
-Total purchase amount: 30  
-Average item cost: 15  
+
+Total purchase amount: 30.0  
+Average item cost: 15.0  
 Number of items bought: 2  
 
 ---
@@ -42,10 +44,8 @@ This program analyzes customer preferences and calculates market share percentag
 The program loops through a list of customer preferences and counts how many times each product appears. It then calculates the percentage share of each product and prints the results.
 
 ### Sample Run
-Input:
-preferences = ["coffee", "tea", "coffee", "soda"]
-
 Output:
+
 Total preferences: 4  
 Preference counts: {'coffee': 2, 'tea': 1, 'soda': 1}  
 coffee: 50%  
@@ -70,11 +70,13 @@ For each expense category, the user enters amounts until 0 is entered. The progr
 
 ### Sample Run
 Input:
+
 Travel: 500, 200, 0  
 Meals: 40, 60, 30, 0  
 Supplies: 100, 0  
 
 Output:
+
 Expense Summary Report:
 Current total for Travel: $700.00  
 Current total for Meals: $130.00  
@@ -98,10 +100,8 @@ This program calculates a 10% commission for employees and prints a leaderboard 
 A function calculates 10% commission for each employee. The program stores commissions in a dictionary and repeatedly finds and prints the highest commission to create a ranked leaderboard.
 
 ### Sample Run
-Input:
-sales = {"Alice": 5000, "Bob": 7000, "Carol": 3000}
-
 Output:
+
 Leaderboard (Highest to Lowest):
 Bob: $700.00  
 Alice: $500.00  
@@ -125,6 +125,7 @@ The program calculates the initial portfolio value. It then simulates daily pric
 
 ### Sample Run
 Output:
+
 Total Portfolio Value: 3950  
 
 Simulating 1 week of price changes:
@@ -152,11 +153,18 @@ The program calculates monthly interest and subtracts the monthly payment from t
 
 ### Sample Run
 Input:
+
 Loan amount: 10000  
 Monthly payment: 300  
 Interest rate: 5  
 
 Output:
+
+Remaining balance: 9741.67
+Remaining balance: 9482.26
+Remaining balance: 9221.77
+Remaining balance: 8960.19
+...
 Loan paid off in 36 months with $ 789.45 paid as interest.
 
 ---
@@ -176,6 +184,7 @@ The program loops through each warehouse and sums product quantities into a tota
 
 ### Sample Run
 Output:
+
 Total Stock Across Supply Chain:
 apples : 300  
 bananas : 250  
@@ -196,11 +205,17 @@ This program classifies customers into Bronze, Silver, and Gold tiers based on p
 Users enter customer names and purchase amounts. The program categorizes customers into tiers and prints a summary.
 
 ### Sample Run
+Input:
+
+Enter customer name (or 0 to finish): Alice, Ben, Connor, Sam, 0
+Enter total purchase amount: 50000, 4900, 150, 200
+
 Output:
+
 Customer Tier Summary:
-Bronze: 2  
-Silver: 1  
-Gold: 1  
+Bronze: 2
+Silver: 1
+Gold: 1
 
 ---
 
@@ -218,13 +233,20 @@ This program projects revenue growth over 10 years.
 Starting with an initial revenue, the program applies annual growth and prints revenue for each year.
 
 ### Sample Run
-Output:
-Year | Revenue
-0 | 10000  
-1 | 11000  
-2 | 12100  
+Input:
 
----
+Enter initial revenue: 500
+Enter annual growth rate (in %): 5
+
+Output:
+
+Year | Revenue
+0 | 500.0
+1 | 525.0
+2 | 551.25
+3 | 578.81
+
+...
 
 ## Exercise 10 – Startup Revenue ASCII Chart
 
@@ -240,11 +262,18 @@ This program visualizes revenue growth using an ASCII bar chart.
 The program converts projected revenue into visual bars using the "#" character and prints a simple text-based growth chart.
 
 ### Sample Run
+Input:
+
+Enter initial revenue: 5000
+Enter growth rate (in %): 10
+
 Output:
+
 Startup Revenue Projection (ASCII Chart)
 
-Year 0 : ####  
-Year 1 : #####  
-Year 2 : ######  
-
----
+Year 0 : #####
+Year 1 : #####
+Year 2 : ######
+Year 3 : ######
+Year 4 : #######
+Year 5 : ########
