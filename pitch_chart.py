@@ -15,7 +15,7 @@ for year in range(0, 6):
     # Calculate the number of bars to represent the revenue, scaled to a maximum of 5 bars
 
     bars = "#" * bars_count
-    print("Year", year, ":", bars) # Print the year and the corresponding bars representing the revenue
+    print("Year", year, ":", bars, round(revenue, 2)) # Print the year and the corresponding bars representing the revenue
 
      # Update revenue for the next year based on the growth rate
     revenue = revenue * (1 + rate)
