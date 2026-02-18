@@ -7,6 +7,12 @@ revenue = initial_revenue
 print("\nStartup Revenue Projection (ASCII Chart)\n")
 
 for year in range(0, 6):
-    bars = "#" * int(revenue / 1000)
+    bars_count = int(revenue / 500)
+
+    if bars_count == 0 and revenue > 0:
+        bars_count = 1
+
+    bars = "#" * bars_count
     print("Year", year, ":", bars)
+
     revenue = revenue * (1 + rate)
