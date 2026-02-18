@@ -1,6 +1,7 @@
 sales = {"Alice": 5000, "Bob": 7000, "Carol": 3000}
 commission = {}
 
+# Function to calculate commission based on sales amount
 def calculate_commission(sales_amount):
     return sales_amount * 0.1
 for salesperson, amount in sales.items():
@@ -8,7 +9,7 @@ for salesperson, amount in sales.items():
 print("Salesperson Commissions:")
 
 print("\nLeaderboard (Highest to Lowest):")
-
+# Sort and display the commission leaderboard
 while commission:
     highest_person = None
     highest_commission = 0
