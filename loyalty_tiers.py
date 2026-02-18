@@ -1,5 +1,6 @@
 customers = {}
 
+# Collect customer data until the user decides to stop
 while True:
     name = input("Enter customer name (or 0 to finish): ")
 
@@ -13,6 +14,7 @@ bronze = 0
 silver = 0
 gold = 0
 
+# Classify customers into tiers based on their purchase amounts
 for customer in customers:
     amount = customers[customer]
 
