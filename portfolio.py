@@ -6,6 +6,7 @@ portfolio = {
 
 total_value = 0
 
+# Calculate initial portfolio value
 for stock in portfolio:
     shares = portfolio[stock]["shares"]
     price = portfolio[stock]["price"]
@@ -18,6 +19,7 @@ import random
 
 print("\nSimulating 1 week of price changes:\n")
 
+# Simulate price changes for 7 days
 for day in range(1, 8):
     print("Day", day)
 
@@ -27,6 +29,7 @@ for day in range(1, 8):
 
     total_value = 0
 
+# Calculate new portfolio value after price changes
     for stock in portfolio:
         shares = portfolio[stock]["shares"]
         price = portfolio[stock]["price"]
